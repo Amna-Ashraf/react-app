@@ -1,13 +1,122 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  background: #2e2e2e;
+  padding:10px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0px 9px 15px -3px rgba(14, 14, 14, 0.897);
+  border-radius: 20px;
+}
+
+
+.navbar-menu{
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  margin: 0;
+  align-items: center;
+  
+}
+
+.navbar-menu li a{
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  height: 100vh;
+  background-image: url('background.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.screen{
+  height: 4rem;
+  margin-bottom: 4rem;
+  color: white;
+  font-size: x-large;
+}
+
+.wrapper{
+  color: beige;
+  background-color: rgb(39, 39, 39);
+  width: 20rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgba(14, 14, 14, 0.897);
+}
+
+.buttonBox{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+
+.button{
+  background-color: #2e2e2e;
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fefcfc;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.button:hover{
+  border: 3px dotted rgb(251, 250, 250);
+}
+
+.equals{
+  background: rgb(239, 25, 61);
+  grid-column: 3/5;
+}
+
+.opt{
+  background: rgb(239, 25, 61);
+
+}
+
+.homePage{
+  background-color: #2e2e2e;
+  color: rgb(239, 25, 61);
+  border-radius:20px ;
+  margin-top: 50px;
+  padding: 40px;
+  justify-content: center;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:40px;
+  box-shadow: 0px 9px 15px -3px rgba(14, 14, 14, 0.897);
+
+}
+
+.points{
+  color: white;
+  font-size:20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.quote{
+  background-image: url('./pages/quote.jpg'); 
+  border-radius:20px ;
+  margin-top: 50px;
+  padding: 95px;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 9px 15px -3px rgba(14, 14, 14, 0.897);
 }
